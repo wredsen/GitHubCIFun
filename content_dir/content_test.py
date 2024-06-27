@@ -1,3 +1,6 @@
 import numpy as np
 
-a = np.zeros(5)
+class ContentClass:
+
+    def __init__(self, name: str):
+        self.name = name
