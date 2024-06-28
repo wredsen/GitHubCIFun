@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "fmugym"
+name = "test_cli_package"
 version = "0.1.0"
 description = ""
 authors = ["Konstantin Wrede <konstantin.wrede@eas.iis.fraunhofer.de>"]

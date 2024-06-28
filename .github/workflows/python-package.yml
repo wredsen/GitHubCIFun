@@ -32,6 +32,7 @@ jobs:
         poetry config virtualenvs.in-project true
         poetry install
         poetry add flake8 pytest pytest-cov
+        poetry add contentdir
         source `poetry env info --path`/bin/activate
     - name: Lint with flake8
       run: |
@@ -41,4 +42,4 @@ jobs:
         poetry run flake8 --ignore=F821 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        poetry run pytest --cov=content_dir tests/
+        poetry run pytest --cov=contentdir tests/
