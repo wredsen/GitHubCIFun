@@ -27,7 +27,7 @@ jobs:
         run: |
           poetry config virtualenvs.create false
           # If your PyPI API token is stored in a secret
-
+          poetry config pypi-token.pypi ${{ secrets.PYPI_API_TOKEN }}
       - name: Build and publish to PyPI
 
         run: |
