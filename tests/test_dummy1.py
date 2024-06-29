@@ -1,6 +1,6 @@
 # content of test_sample.py
 import numpy as np
-from contentdir import ContentClass
+from githubcifun import ContentClass
  
 def test_config():
     content_test = ContentClass("hallo")
