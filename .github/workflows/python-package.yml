@@ -41,4 +41,4 @@ jobs:
         poetry run flake8 --ignore=F821 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        poetry run pytest --cov=contentdir tests/
+        poetry run pytest --cov=githubcifun tests/
