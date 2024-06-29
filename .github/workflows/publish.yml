@@ -29,5 +29,5 @@ jobs:
       - name: Build and publish to PyPI
 
         run: |
-          poetry build
-          poetry publish --build
+          poetry build -vvv
+          poetry publish -vvv
